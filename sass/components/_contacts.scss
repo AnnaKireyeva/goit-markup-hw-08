@@ -67,7 +67,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     &__item:not(:last-child) {
       margin-bottom: 10px;
@@ -143,6 +143,35 @@
           fill: currentColor;
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    &__mail-link {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    &__tel-link {
+      font-size: 14px;
+      line-height: 1.14;
     }
   }
 }
