@@ -21,6 +21,11 @@
   color: var(--main-text-color);
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .benefits__subtitle {
+    text-align: center;
+  }
+}
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
@@ -33,6 +38,9 @@
     padding-bottom: 94px;
   }
 }
+// .benefits-item {
+//   max-width: 450px;
+// }
 @media screen and (max-width: 767px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 30px;
