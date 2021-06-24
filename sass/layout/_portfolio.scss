@@ -75,7 +75,23 @@
     }
   }
 }
+.portfolio-img {
+  max-width: 100%;
+}
 
+@media screen and (min-width: 768px) {
+  .portfolio-img {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-img {
+    width: 370px;
+    height: 294px;
+  }
+}
 .overlay {
   position: absolute;
   top: 0;

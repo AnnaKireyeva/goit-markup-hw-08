@@ -117,6 +117,7 @@ body {
 
 .social-contacts {
   display: flex;
+  justify-content: center;
 }
 
 .social-contacts__item:not(:last-child) {
@@ -584,6 +585,12 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 5;
+  }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   .mobile-menu__container {
     position: relative;
@@ -613,6 +620,9 @@ body {
     color: var(--main-text-color);
   }
   .mobile-menu__link_current {
+    color: var(--accent-color);
+  }
+  .mobile-menu__link:hover {
     color: var(--accent-color);
   }
   .mobile-menu__item:not(:last-child) {
@@ -661,14 +671,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--accent-color);
   }
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -976,8 +981,6 @@ body {
 }
 
 .team__information {
-  padding-left: 122px;
-  padding-right: 122px;
   padding-top: 30px;
   padding-bottom: 24px;
   text-align: center;
@@ -1036,19 +1039,19 @@ body {
   }
 }
 
-.team__photo {
+.team__foto {
   max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .team__photo {
+  .team__foto {
     width: 354px;
     height: 374px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team__photo {
+  .team__foto {
     width: 270px;
     height: 260px;
   }
@@ -1251,7 +1254,7 @@ body {
 }
 
 .subscription__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1413,6 +1416,24 @@ body {
 
 .portfolio-card-link:hover .overlay, .portfolio-card-link:focus .overlay {
   transform: translateY(0%);
+}
+
+.portfolio-img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-img {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-img {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .overlay {
