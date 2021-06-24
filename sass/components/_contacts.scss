@@ -93,6 +93,8 @@
 @media screen and (min-width: 768px) {
   .contacts {
     &__mail-link {
+      display: flex;
+      align-items: center;
       font-weight: 500;
       font-size: 12px;
       line-height: 1.17;
@@ -121,6 +123,8 @@
 @media screen and (min-width: 768px) {
   .contacts {
     &__tel-link {
+      display: flex;
+      align-items: center;
       font-weight: 500;
       font-size: 12px;
       line-height: 1.17;

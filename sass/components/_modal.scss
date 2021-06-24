@@ -111,8 +111,8 @@
 }
 .modal__checkbox-policy {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-gray-color);
   margin-bottom: 30px;
@@ -141,4 +141,10 @@
 }
 .modal__policy-link {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
