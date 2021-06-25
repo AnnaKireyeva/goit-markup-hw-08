@@ -13,12 +13,6 @@
     pointer-events: none;
     z-index: 5;
 
-    &.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-
     &__container {
       position: relative;
       padding-top: 48px;
@@ -82,6 +76,7 @@
   .mobile-menu__social-networks {
     display: flex;
     margin-top: 64px;
+    flex-wrap: wrap;
     &-item:not(:last-child)::after {
       content: "";
       width: 22px;
@@ -100,10 +95,14 @@
       color: var(--accent-color);
     }
   }
-  //
-  @media screen and (min-width: 768px) {
-    .mobile-menu {
-      display: none;
-    }
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
   }
 }
